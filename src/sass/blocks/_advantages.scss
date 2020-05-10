@@ -7,9 +7,18 @@
     margin-top: 65px;
     display: flex;
     justify-content: space-between;
+    @include tablets {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
   }
   &__item {
     width: 247px;
+
+    @include tablets {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__icon {
@@ -23,6 +32,9 @@
     font-weight: 700;
     text-align: center;
     color: #0d0d0d;
+    @include tablets {
+      margin-top: 30px;
+    }
   }
 
   &__text {
@@ -32,6 +44,16 @@
     text-align: center;
     color: #0d0d0d;
 
+    @include tablets {
+      width: 400px;
+      margin: 0 auto;
+      br {
+        display: none;
+      }
+    }
+    @include phones {
+      width: 100%;
+    }
     a {
       font-size: 14px;
       font-weight: 300;

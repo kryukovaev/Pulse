@@ -6,11 +6,22 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include phones {
+    min-height: 450px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 90px;
+
+    @include tablets {
+      align-items: center;
+    }
+    @include phones {
+      margin-top: 60px;
+    }
   }
 
   &__header {
@@ -19,6 +30,13 @@
     color: #ffffff;
     text-transform: uppercase;
     line-height: 1;
+
+    @include tablets {
+      font-size: 36px;
+    }
+    @include phones {
+      font-size: 24px;
+    }
   }
   &__subheader {
     margin-top: 17px;
@@ -27,12 +45,23 @@
     color: #ffffff;
     text-transform: uppercase;
     line-height: 1;
+
+    @include tablets {
+      font-size: 20px;
+    }
+    @include phones {
+      font-size: 12px;
+    }
   }
   &__icons {
     margin-top: 65px;
     width: 425px;
     display: flex;
     justify-content: space-between;
+    @include phones {
+      width: 300px;
+      margin-top: 40px;
+    }
   }
 
   &__icon {
@@ -41,6 +70,11 @@
     font-size: 14px;
     font-weight: 500;
     color: #ffffff;
+
+    @include phones {
+      width: 90px;
+      font-size: 10px;
+    }
 
     img {
       display: block;
@@ -53,6 +87,9 @@
     font-weight: 500;
     color: #ffffff;
     margin-top: 18px;
+    @include phones {
+      font-size: 14px;
+    }
     a {
       color: #ffffff;
       text-decoration: underline;

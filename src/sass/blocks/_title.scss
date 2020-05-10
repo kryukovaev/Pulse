@@ -3,4 +3,8 @@
   font-weight: 700;
   text-align: center;
   color: #0d0d0d;
+
+  @include phones {
+    font-size: 24px;
+  }
 }
