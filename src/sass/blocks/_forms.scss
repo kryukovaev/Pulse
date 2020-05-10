@@ -18,4 +18,8 @@
       margin-bottom: 20px;
     }
   }
+
+  @include phones {
+    margin: 36px auto 0 auto;
+  }
 }
